@@ -17,60 +17,24 @@ const RentContainer: NextPage = () => {
         </div>
         <div className="self-stretch flex flex-row flex-wrap py-0 px-2.5 items-center justify-center gap-[32px]">
           <PropertyCard
-            imageDimensions="/unsplashrlwe8f8anoc7@2x.png"
-            imageDimensionsText="/car7.svg"
-            imageDimensionsText2="/bathtub5.svg"
-            imageDimensionsText3="/arrowsout2.svg"
-            imageDimensionsText4="/ellipse-1@2x.png"
-            imageDimensionsText5="/sharenetwork7.svg"
-            imageDimensionsText6="/heart4.svg"
-            imageDimensionsText7="/plus4.svg"
-            propWidth="unset"
-            propFlex="1"
-            propMinWidth="355px"
-            propMaxWidth="400px"
+            imgUrl="/unsplashrlwe8f8anoc7@2x.png"
+            name="92 Allium Place, Orlando FL 32827"
+            price={590693}
           />
           <PropertyCard
-            imageDimensions="/unsplashrlwe8f8anoc8@2x.png"
-            imageDimensionsText="/car7.svg"
-            imageDimensionsText2="/bathtub5.svg"
-            imageDimensionsText3="/arrowsout2.svg"
-            imageDimensionsText4="/ellipse-1@2x.png"
-            imageDimensionsText5="/sharenetwork8.svg"
-            imageDimensionsText6="/heart4.svg"
-            imageDimensionsText7="/plus4.svg"
-            propWidth="unset"
-            propFlex="1"
-            propMinWidth="355px"
-            propMaxWidth="400px"
+            imgUrl="/unsplashrlwe8f8anoc8@2x.png"
+            name="92 Allium Place, Orlando FL 32827"
+            price={590693}
           />
           <PropertyCard
-            imageDimensions="/unsplashrlwe8f8anoc9@2x.png"
-            imageDimensionsText="/car7.svg"
-            imageDimensionsText2="/bathtub6.svg"
-            imageDimensionsText3="/arrowsout3.svg"
-            imageDimensionsText4="/ellipse-1@2x.png"
-            imageDimensionsText5="/sharenetwork9.svg"
-            imageDimensionsText6="/heart5.svg"
-            imageDimensionsText7="/plus5.svg"
-            propWidth="unset"
-            propFlex="1"
-            propMinWidth="355px"
-            propMaxWidth="400px"
+            imgUrl="/unsplashrlwe8f8anoc9@2x.png"
+            name="92 Allium Place, Orlando FL 32827"
+            price={590693}
           />
           <PropertyCard
-            imageDimensions="/unsplashrlwe8f8anoc10@2x.png"
-            imageDimensionsText="/car8.svg"
-            imageDimensionsText2="/bathtub7.svg"
-            imageDimensionsText3="/arrowsout3.svg"
-            imageDimensionsText4="/ellipse-1@2x.png"
-            imageDimensionsText5="/sharenetwork9.svg"
-            imageDimensionsText6="/heart5.svg"
-            imageDimensionsText7="/plus5.svg"
-            propWidth="unset"
-            propFlex="1"
-            propMinWidth="355px"
-            propMaxWidth="400px"
+            imgUrl="/unsplashrlwe8f8anoc10@2x.png"
+            name="92 Allium Place, Orlando FL 32827"
+            price={590693}
           />
         </div>
       </div>

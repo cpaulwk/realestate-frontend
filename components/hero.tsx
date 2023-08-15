@@ -1,38 +1,14 @@
 import type { NextPage } from "next";
 import "antd/dist/antd.min.css";
-import { Menu, Dropdown, Button } from "antd";
-import {
-  DownOutlined,
-  ArrowLeftOutlined,
-  ArrowRightOutlined,
-  CalendarOutlined,
-  CheckOutlined,
-  ClockCircleOutlined,
-  CloseOutlined,
-  DeleteOutlined,
-  EditOutlined,
-  ExclamationCircleOutlined,
-  HeartOutlined,
-  LeftOutlined,
-  LockOutlined,
-  MailOutlined,
-  PaperClipOutlined,
-  PhoneOutlined,
-  QuestionCircleOutlined,
-  ReloadOutlined,
-  RightOutlined,
-  SearchOutlined,
-  SendOutlined,
-  ShareAltOutlined,
-  UserOutlined,
-} from "@ant-design/icons";
+import { Menu, Dropdown } from "antd";
+import { DownOutlined } from "@ant-design/icons";
 import { useRouter } from "next/router";
 
 const Hero: NextPage = () => {
   const router = useRouter();
 
   const onSearchCTAClick = () => {
-    router.push("/");
+    router.push("/properties");
   };
 
   return (
@@ -101,19 +77,50 @@ const Hero: NextPage = () => {
                 </div>
                 <Dropdown
                   className="self-stretch"
-                  overlay={
-                    <Menu>
-                      {([{ value: "Select property type" }] as any).map(
-                        (option: any, index: number) => (
-                          <Menu.Item key={index}>
-                            <a onClick={(e) => e.preventDefault()}>
-                              {option.value || ""}
-                            </a>
-                          </Menu.Item>
-                        )
-                      )}
-                    </Menu>
-                  }
+                  menu={{
+                    items: [
+                      {
+                        key: "1",
+                        label: (
+                          <a onClick={(e) => e.preventDefault()}>
+                            Studio apartments
+                          </a>
+                        ),
+                      },
+                      {
+                        key: "2",
+                        label: (
+                          <a onClick={(e) => e.preventDefault()}>
+                            One-bedroom apartments
+                          </a>
+                        ),
+                      },
+                      {
+                        key: "3",
+                        label: (
+                          <a onClick={(e) => e.preventDefault()}>
+                            Two-bedroom apartments
+                          </a>
+                        ),
+                      },
+                      {
+                        key: "4",
+                        label: (
+                          <a onClick={(e) => e.preventDefault()}>
+                            Three-bedroom apartments
+                          </a>
+                        ),
+                      },
+                      {
+                        key: "5",
+                        label: (
+                          <a onClick={(e) => e.preventDefault()}>
+                            Four or more bedroom apartments/houses
+                          </a>
+                        ),
+                      },
+                    ],
+                  }}
                   placement="bottomLeft"
                   trigger={["hover"]}
                 >
